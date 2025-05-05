@@ -10,15 +10,18 @@
           rel="stylesheet">
     <title>Login</title>
 </head>
-<body class="bg-[#E6F3FF]/75 flex items-center justify-center h-screen">
+<body class="bg-[#E6F3FF]/75 flex items-center justify-center h-screen sm:justify-end">
 
+<div class="w-[50vw] h-[100vh] flex justify-center items-center hidden sm:inline py-10">
+    <img src="/public/background.png" alt="" class="object-contain size-full">
+</div>
 <!-- Panel -->
-<div class="size-full h-[70vh] bg-[#FCFEFF] rounded-[25px] flex flex-col items-center py-5 px-10 gap-4">
+<div class="size-full h-[70vh] bg-[#FCFEFF] rounded-[25px] flex flex-col items-center py-5 px-10 gap-4 sm:h-full sm:w-[50vw] min-h-130 sm:px-20 md:px-30 sm:py-15">
     <!-- Header -->
-    <header class="font-semibold helvetica">Create your Free Account!</header>
+    <header class="font-semibold helvetica sm:text-xl md:text-2xl">Create your Free Account!</header>
     
     <!-- Fields -->
-    <div class="grid grid-rows-3 h-[50%] gap-2 w-full">
+    <div class="grid grid-rows-3 h-[50%] gap-2 w-full max-h-70 min-h-50">
         <label class="field-label">
             Full Name
             <input class="field-input" placeholder="Enter your Full Name here"/>
@@ -34,17 +37,19 @@
     </div>
     
     <!-- Buttons -->
-    <button class="bg-[#F9ED32] helvetica font-semibold rounded-md px-10 py-2">Create Account</button>
+    <button class="bg-[#F9ED32] helvetica font-semibold rounded-md px-10 py-2 xl:px-15">Create Account</button>
     <label class="text-start text-black/40">Already have an account? <a class="text-[#00C1DE]">Log in</a></label>
     
     <label class="font-semibold text-black/30 helvetica text-lg">- OR -</label>
     
-    <div class="grid grid-cols-2 w-full items-center justify-center">
-        <a class="flex size-12 p-2 items-center justify-center outline-1 outline-black/50 rounded-full mx-auto">
-            <img alt="google" src="https://img.icons8.com/fluency/86/google-logo.png"/>
+    <div class="grid grid-cols-2 w-full items-center justify-center md:grid-cols-1 md:grid-rows-2 md:gap-5 xl:grid-cols-2 xl:grid-rows-1 xl:gap-0">
+        <a class="flex size-12 p-2 items-center justify-center outline-1 outline-black/50 rounded-full mx-auto md:w-55 md:justify-start">
+            <img alt="google" class="md:size-10" src="https://img.icons8.com/fluency/86/google-logo.png"/>
+            <label class="hidden md:inline text-black/50 ml-2">Sing up with Google</label>
         </a>
-        <a class="flex size-12 p-2 items-center justify-center outline-1 outline-black/50 rounded-full mx-auto">
-            <img alt="github" src="https://img.icons8.com/fluency/86/github.png"/>
+        <a class="flex size-12 p-2 items-center justify-center outline-1 outline-black/50 rounded-full mx-auto md:w-55 md:justify-start">
+            <img alt="google" class="md:size-10" src="https://img.icons8.com/fluency/86/github.png"/>
+            <label class="hidden md:inline text-black/50 ml-2">Sing up with Github</label>
         </a>
     </div>
 </div>
