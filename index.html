@@ -2,10 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="/src/style.css"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="/src/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <title>Login</title>
 </head>
-<body>
+<body class="bg-[#E6F3FF]/75 flex items-center justify-center h-screen">
+
+<!-- Panel -->
+<div class="size-full h-[70vh] bg-[#FCFEFF] rounded-[25px] flex flex-col items-center py-5 px-10 gap-4">
+    <!-- Header -->
+    <header class="font-semibold helvetica">Create your Free Account!</header>
+    
+    <!-- Fields -->
+    <div class="grid grid-rows-3 h-[50%] gap-2 w-full">
+        <label class="field-label">
+            Full Name
+            <input class="field-input" placeholder="Enter your Full Name here"/>
+        </label>
+        <label class="field-label">
+            Email
+            <input class="field-input" placeholder="Enter your Email here" type="email"/>
+        </label>
+        <label class="field-label">
+            Password
+            <input class="field-input" placeholder="Enter your Password here" type="password"/>
+        </label>
+    </div>
+    
+    <!-- Buttons -->
+    <button class="bg-[#F9ED32] helvetica font-semibold rounded-md px-10 py-2">Create Account</button>
+    <label class="text-start text-black/40">Already have an account? <a class="text-[#00C1DE]">Log in</a></label>
+    
+    <label class="font-semibold text-black/30 helvetica text-lg">- OR -</label>
+    
+    <div class="grid grid-cols-2 w-full items-center justify-center">
+        <a class="flex size-12 p-2 items-center justify-center outline-1 outline-black/50 rounded-full mx-auto">
+            <img alt="google" src="https://img.icons8.com/fluency/86/google-logo.png"/>
+        </a>
+        <a class="flex size-12 p-2 items-center justify-center outline-1 outline-black/50 rounded-full mx-auto">
+            <img alt="github" src="https://img.icons8.com/fluency/86/github.png"/>
+        </a>
+    </div>
+</div>
 </body>
 </html>
